@@ -1,4 +1,4 @@
-package assignment2.exc;
+package exc;
 
 public class StackOverflowException extends RuntimeException
 {

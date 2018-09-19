@@ -1,6 +1,6 @@
-package assignment2.inter;
+package inter;
 
-public interface DanielAyvarItemTypeInterface
+public interface ItemTypeInterface
 {
     String getName();
     void setName(String name);

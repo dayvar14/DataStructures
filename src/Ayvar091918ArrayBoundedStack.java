@@ -1,10 +1,8 @@
-package assignment2;
+import adt.ArrayBoundedStack;
+import exc.StackOverflowException;
+import exc.StackUnderflowException;
 
-import assignment2.adt.CS304ArrayBoundedStack;
-import assignment2.exc.StackOverflowException;
-import assignment2.exc.StackUnderflowException;
-
-public class Ayvar091918ArrayBoundedStack extends CS304ArrayBoundedStack
+public class Ayvar091918ArrayBoundedStack extends ArrayBoundedStack
 {
     private final static int DEFAULT_SIZE = 100;
 

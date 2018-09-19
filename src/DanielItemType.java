@@ -1,8 +1,6 @@
-package assignment2;
+import adt.ItemType;
 
-import assignment2.adt.CS304ItemType;
-
-public class DanielItemType extends CS304ItemType
+public class DanielItemType extends ItemType
 {
     private static int idCounter = 0;
 
