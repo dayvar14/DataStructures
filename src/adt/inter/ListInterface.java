@@ -1,8 +1,5 @@
 public interface ListInterface<T>
 {
-    void push( T element) throws OverflowException;
-    void pop() throws UnderflowException;
-    T top() throws UnderflowException;
 
     //Boolean Methods
     boolean isEmpty();
@@ -10,4 +7,6 @@ public interface ListInterface<T>
     //Other Methods
     void makeEmpty();
     boolean isFull();
+
+    void push( T element) throws OverflowException;
 }

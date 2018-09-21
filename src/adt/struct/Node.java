@@ -1,7 +1,7 @@
 public class Node<T> implements NodeInterface<T>
 {
-    private Node<T> next;
-    private T data;
+    protected Node<T> next;
+    protected T data;
     public Node( T data, Node<T> next )
     {
         this.next = next;
