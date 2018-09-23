@@ -9,4 +9,5 @@ public interface ListInterface<T>
     boolean isFull();
 
     void push( T element) throws OverflowException;
+    void pop() throws UnderflowException;
 }

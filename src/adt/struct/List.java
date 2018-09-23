@@ -6,10 +6,23 @@ public class List<T> implements ListInterface<T>
     @Override
     public void push(T data) throws OverflowException
     {
-        Node<T> element = new Node<T>(data,topNode);
+        Node<T> element = new Node(data,topNode);
         topNode = element;
         size++;
     }
+    @Override
+    public void pop() throws UnderflowException
+    {
+        if( size == 0)
+            throw new UnderflowException("Stack is full!");
+        else
+        {
+            topNode = topNode.getNext();
+        }
+
+    }
+
+
     @Override
     public boolean isEmpty()
     {

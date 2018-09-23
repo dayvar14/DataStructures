@@ -1,11 +1,11 @@
 public class BTNode<T, K> extends Node<T>
 {
-    BTNode lNode = null;
-    BTNode rNode = null;
+    BTNode<T,K> lNode = null;
+    BTNode<T,K> rNode = null;
     int index = 0;
     K key = null;
 
-    public BTNode(T data, BTNode next )
+    public BTNode(T data, K key, BTNode<T,K> next )
     {
         super(data,next);
 
@@ -14,9 +14,11 @@ public class BTNode<T, K> extends Node<T>
 
     }
 
-    public BTNode[] getChildren()
+    public List<BTNode<T,K>> getBranches()
     {
-        BTNode[] children = {lNode, rNode};
+        List<BTNode<T,K>> children = new List<>();
+        children.push(lNode);
+        children.push(rNode);
         return children;
     }
 
